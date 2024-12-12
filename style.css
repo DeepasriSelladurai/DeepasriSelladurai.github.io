@@ -92,7 +92,7 @@ span.role{
     width: 5px ;
 }
 ::-webkit-scrollbar-thumb{
-    background-color:rgb(248,0,248);
+    background-color:black;
 }
 ::-webkit-scrollbar-track{
     background-color:black;
