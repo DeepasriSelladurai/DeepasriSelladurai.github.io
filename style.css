@@ -7,6 +7,7 @@
     list-style: none;
 }
 body{
+    flex-grow:1;
     display: block;
     padding:2%;
     background: black;
