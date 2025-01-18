@@ -5,6 +5,9 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
     list-style: none;
+    flex-grow:1;
+    flex-wrap:wrap;
+    
 }
 body{
     flex-grow:1;
