@@ -272,6 +272,14 @@ ct6{
     padding-left: 25%;
     text-transform: capitalize;
 }
+cn7{
+    padding-left: 30%;
+    text-transform: uppercase;
+}
+ct7{
+    padding-left: 25%;
+    text-transform: capitalize;
+}
 .image-card::before{
     content:"";
     position:absolute;
@@ -308,6 +316,9 @@ ct6{
 }
 #c6::after{
     background-image: url(professionalSkills.jpg);
+}
+#c7::after{
+    background-image: url(HackerRank_Python_basic_Certificate.jpg);
 }
 .container4{
     color:white;
