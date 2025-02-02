@@ -13,7 +13,7 @@ body{
     flex-grow:1;
     display: block;
     padding:2%;
-    background: #36454f;
+    background: #040404;
     overflow-x:scroll;
 }
 .header{
