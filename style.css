@@ -11,7 +11,8 @@
 }
 body{
     flex-grow:1;
-    display: block;
+    display: flex;
+    justify-content:center;
     padding:2%;
     background: #040404;
     overflow-x:scroll;
