@@ -432,7 +432,7 @@ ct7{
     box-shadow: 0 0 15px 0 rgb(248,0,248) inset;
 }
 .skill2-1::after{
-    content: "74% Intermediate 1.5Year";
+    content: "70% Intermediate 1.5Year";
     position: absolute;
     top: 10px;
     left: 10px;
