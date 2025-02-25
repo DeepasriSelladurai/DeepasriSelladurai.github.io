@@ -280,6 +280,14 @@ ct7{
     padding-left: 26%;
     text-transform: capitalize;
 }
+cn8{
+    padding-left: 30%;
+    text-transform: uppercase;
+}
+ct8{
+    padding-left: 26%;
+    text-transform: capitalize;
+}
 .image-card::before{
     content:"";
     position:absolute;
@@ -319,6 +327,9 @@ ct7{
 }
 #c7::after{
     background-image: url(HackerRank_Python_basic_Certificate.jpg);
+}
+#c8::after{
+    background-image: url(GeeksforGeeksMongoDB.jpg);
 }
 .container4{
     color:white;
