@@ -6,6 +6,7 @@ var typed = new Typed('.role', {
          ' Software Engineer',
          ' Freelancer',
          ' Flask Developer',
+         ' MongoDB Developer',
          ' Python  Programmer'],
     typeSpeed:100,
     backSpeed:100,
