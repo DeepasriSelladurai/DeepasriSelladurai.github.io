@@ -288,6 +288,14 @@ ct8{
     padding-left: 26%;
     text-transform: capitalize;
 }
+cn9{
+    padding-left: 30%;
+    text-transform: uppercase;
+}
+ct9{
+    padding-left: 26%;
+    text-transform: capitalize;
+}
 .image-card::before{
     content:"";
     position:absolute;
