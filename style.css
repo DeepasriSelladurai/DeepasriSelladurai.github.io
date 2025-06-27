@@ -296,6 +296,14 @@ ct9{
     padding-left: 23%;
     text-transform: capitalize;
 }
+cn10{
+    padding-left: 30%;
+    text-transform: uppercase;
+}
+ct10{
+    padding-left: 26%;
+    text-transform: capitalize;
+}
 .image-card::before{
     content:"";
     position:absolute;
@@ -341,6 +349,9 @@ ct9{
 }
 #c9::after{
     background-image: url(HackerRank_Software_Engineer_Intern_Certificate.png);
+}
+#c10::after{
+    background-image: url(Python_GFG.jpg);
 }
 .container4{
     color:white;
