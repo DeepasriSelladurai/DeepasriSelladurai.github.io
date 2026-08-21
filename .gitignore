@@ -1,0 +1,24 @@
+# Dependencies & environment
+node_modules/
+.env
+.env.*
+*.log
+
+# Build & cache artifacts
+dist/
+build/
+.cache/
+.parcel-cache/
+.DS_Store
+Thumbs.db
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*~
+*.bak

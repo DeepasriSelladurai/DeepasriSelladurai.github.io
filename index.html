@@ -3,648 +3,514 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepasri Selladurai | Portfolio</title>
-    <link rel="icon" href="Face pic.jpg">
-    <!-- Boxicons for modern icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Font Awesome -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- SEO & Metadata -->
+    <title>Deepasri Selladurai | Python Developer • IoT Developer • Software Engineer</title>
+    <meta name="description" content="Portfolio of Deepasri Selladurai — M.Sc. Computer Science student, Python Developer, IoT Systems Engineer, and STEM Educator. GeeksforGeeks Institute Rank #1 with 500+ DSA solved.">
+    <meta name="keywords" content="Deepasri Selladurai, Python Developer, IoT Developer, Software Engineer, ESP32, Arduino, Flask, OpenCV, GeeksforGeeks, LeetCode, STEM Educator, Namakkal, Tamil Nadu">
+    <meta name="author" content="Deepasri Selladurai">
+    <link rel="canonical" href="https://deepasriselladurai.github.io/">
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deepasriselladurai.github.io/">
+    <meta property="og:title" content="Deepasri Selladurai | Python & IoT Developer">
+    <meta property="og:description" content="Explore projects, skills, certifications, and achievements of Deepasri Selladurai — Python Backend, IoT Architectures, Computer Vision & Robotics.">
+    <meta property="og:image" content="assets/images/profile-photo.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Deepasri Selladurai | Python & IoT Developer">
+    <meta name="twitter:description" content="Explore projects, skills, certifications, and achievements of Deepasri Selladurai — Python Backend, IoT Architectures, Computer Vision & Robotics.">
+    <meta name="twitter:image" content="assets/images/profile-photo.jpg">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Deepasri Selladurai",
+      "jobTitle": "Python Developer & IoT Engineer",
+      "url": "https://deepasriselladurai.github.io/",
+      "sameAs": [
+        "https://in.linkedin.com/in/deepasriselladurai",
+        "https://github.com/DeepasriSelladurai",
+        "https://www.geeksforgeeks.org/user/deepasriselladurai25/",
+        "https://leetcode.com/u/Deepasri_Selladurai/",
+        "https://www.codechef.com/users/deepasri_25"
+      ],
+      "knowsAbout": ["Python", "IoT", "ESP32", "Arduino", "Flask", "OpenCV", "Robotics", "MongoDB", "Data Structures and Algorithms"],
+      "alumniOf": "Namakkal Kavignar Ramalingam Government College of Arts and Science for Women"
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/profile-photo.jpg">
+
+    <!-- Boxicons & Font Awesome -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tour.css">
 </head>
 <body>
+    <!-- Skip to Content for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header / Navigation -->
-    <header class="header">
-        <a href="#" class="logo">Deepasri.</a>
-        
-        <i class='bx bx-menu menu-icon' id="menu-icon"></i>
-        
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#volunteering">Volunteering</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#contact">Contact</a>
+    <header class="header" role="banner">
+        <a href="#home" class="brand-logo" aria-label="Deepasri Selladurai Home">
+            Deepasri<span class="logo-dot"></span>
+        </a>
+
+        <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+            <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </nav>
-        
-        <button id="theme-toggle" aria-label="Toggle Theme">
-            <i class='bx bx-moon'></i>
-        </button>
+
+        <div class="header-actions">
+            <!-- Tour Trigger -->
+            <button class="btn btn-tour" onclick="window.portfolioTour.start()" title="Take interactive portfolio tour" aria-label="Start Guided Tour">
+                <i class='bx bx-compass'></i> <span style="font-size:0.85rem;">Take Tour</span>
+            </button>
+
+            <!-- Theme Toggle -->
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light or dark theme">
+                <i class='bx bx-moon'></i>
+            </button>
+
+            <!-- Hamburger Button -->
+            <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
     </header>
 
-    <!-- Home Section -->
-    <section class="hero" id="home">
-        <div class="hero-content fade-in">
-            <h3>Hello, It's me</h3>
-            <h1>DEEPASRI SELLADURAI</h1>
-            <h3 class="typewriter">And I'm a <span class="role"></span></h3>
-            
-            <p class="hero-description">
-                Aspiring Tech Professional currently pursuing M.Sc. Computer Science with strong expertise in Python, IoT, and Full Stack Development. Passionate about building real-time smart systems by integrating hardware and software technologies. Experienced in robotics training and hands-on IoT development, eager to contribute to innovative and impactful technology-driven projects.
-            </p>
-            
-            <div class="hero-buttons">
-                <a href="Deepasri Resume.pdf" download="Deepasri_Resume.pdf" class="btn btn-primary">
-                    <i class='bx bxs-download'></i> Download Resume
-                </a>
-                <a href="#projects" class="btn btn-secondary glass">
-                    <i class='bx bx-folder-open'></i> View Projects
-                </a>
-            </div>
-            
-            <div class="social-links">
-                <a href="https://in.linkedin.com/in/deepasriselladurai" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/DeepasriSelladurai" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="mailto:deepasriselladurai25@gmail.com"><i class='bx bxs-envelope'></i></a>
-            </div>
-        </div>
-        <div class="hero-image fade-in">
-            <div class="profile-img-container">
-                <img src="Face pic.jpg" alt="Deepasri Selladurai" oncontextmenu="return false;">
-            </div>
-        </div>
-    </section>
+    <!-- Main Content Container -->
+    <main id="main-content">
+        <!-- ==========================================================================
+             HERO SECTION
+             ========================================================================== -->
+        <section class="hero-section" id="home" aria-label="Hero Introduction">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-status-pill">
+                            <span class="status-indicator-dot"></span>
+                            <span>Available for Python, Software & IoT Roles</span>
+                        </div>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2 class="section-title fade-in">About Me</h2>
-        <div class="about-content fade-in">
-            <div class="about-media glass">
-                <!-- Fallback image if video fails to load or for better performance -->
-                <video autoplay loop muted playsinline oncontextmenu="return false;">
-                    <source src="Professional clip.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="about-text glass" style="padding: 2rem;">
-                <p>I consider myself a lifelong learner, always eager to learn, explore, and grow. My dedication, perseverance, and passion for technology drive me toward continuous improvement.</p>
-                <p>Currently pursuing M.Sc. Computer Science, I am building expertise in Python Development, IoT Systems, Full Stack Development, Embedded Systems, and Artificial Intelligence.</p>
-                <p>Alongside academics, I actively engage in problem-solving platforms, project development, robotics education, and real-world software development. Every challenge contributes to my growth as a future Software Engineer and Technology Innovator.</p>
-                <p>I aspire to contribute to innovative organizations where I can apply my skills, create impactful solutions, and continue learning from industry professionals.</p>
-            </div>
-        </div>
-    </section>
+                        <h3 class="hero-greeting">Hello, I'm</h3>
+                        <h1 class="hero-name gradient-text">DEEPASRI SELLADURAI</h1>
 
-    <!-- Certifications Section -->
-    <section class="certifications" id="certifications">
-        <h2 class="section-title fade-in">Certifications</h2>
-        <div class="cert-grid fade-in">
-            <!-- Cert 1 -->
-            <div class="cert-card glass">
-                <div class="cert-img-wrapper">
-                    <img src="IBMwebDevelopment.jpg" alt="IBM Web Development">
-                </div>
-                <h4>IBM SkillsBuild</h4>
-                <p>Web Development Fundamentals</p>
-            </div>
-            <!-- Cert 2 -->
-            <div class="cert-card glass">
-                <div class="cert-img-wrapper">
-                    <img src="GLfullStackDevelopment.jpg" alt="Great Learning">
-                </div>
-                <h4>Great Learning</h4>
-                <p>Full Stack Development</p>
-            </div>
-            <!-- Cert 3 -->
-            <div class="cert-card glass">
-                <div class="cert-img-wrapper">
-                    <img src="InfosysSoftwareEngineering.jpg" alt="Infosys">
-                </div>
-                <h4>Infosys Springboard</h4>
-                <p>Software Engineering</p>
-            </div>
-            <!-- Cert 4 -->
-            <div class="cert-card glass">
-                <div class="cert-img-wrapper">
-                    <img src="postmanExpert.jpg" alt="Postman">
-                </div>
-                <h4>Postman Academy</h4>
-                <p>API Fundamentals Student Expert</p>
-            </div>
-            <!-- Cert 5 -->
-            <div class="cert-card glass">
-                <div class="cert-img-wrapper">
-                    <img src="professionalSkills.jpg" alt="IBM Professional">
-                </div>
-                <h4>IBM SkillsBuild</h4>
-                <p>Professional Skills</p>
-            </div>
-            <!-- Cert 6 -->
-            <div class="cert-card glass">
-                <div class="cert-img-wrapper">
-                    <img src="HackerRank_Python_basic_Certificate.jpg" alt="HackerRank">
-                </div>
-                <h4>HackerRank</h4>
-                <p>Python (Basic)</p>
-            </div>
-            <!-- Cert 7 -->
-            <div class="cert-card glass">
-                <div class="cert-img-wrapper">
-                    <img src="HackerRank_Software_Engineer_Intern_Certificate.png" alt="HackerRank Intern">
-                </div>
-                <h4>HackerRank</h4>
-                <p>Software Engineer Intern</p>
-            </div>
-            <!-- Cert 8 -->
-            <div class="cert-card glass">
-                <div class="cert-img-wrapper">
-                    <img src="GeeksforGeeksMongoDB.jpg" alt="GFG MongoDB">
-                </div>
-                <h4>GeeksForGeeks</h4>
-                <p>MongoDB Developer Toolkit</p>
-            </div>
-            <!-- Cert 9 -->
-            <div class="cert-card glass">
-                <div class="cert-img-wrapper">
-                    <img src="Python_GFG.jpg" alt="GFG Python">
-                </div>
-                <h4>GeeksForGeeks</h4>
-                <p>Python Certification</p>
-            </div>
-            <!-- Cert 10 -->
-            <div class="cert-card glass">
-                <div class="cert-img-wrapper">
-                    <img src="guviPython.jpg" alt="GUVI">
-                </div>
-                <h4>GUVI</h4>
-                <p>Python Certification</p>
-            </div>
-            <!-- Cert 11 -->
-            <div class="cert-card glass">
-                <div class="cert-img-wrapper">
-                    <img src="https://via.placeholder.com/400x250/1e1e23/f800f8?text=TCS+iON" alt="TCS iON">
-                </div>
-                <h4>TCS iON</h4>
-                <p>Career Edge Young Professional</p>
-            </div>
-            <!-- Cert 12 -->
-            <div class="cert-card glass">
-                <div class="cert-img-wrapper">
-                    <img src="https://via.placeholder.com/400x250/1e1e23/f800f8?text=Naan+Mudhalvan" alt="Naan Mudhalvan">
-                </div>
-                <h4>Naan Mudhalvan</h4>
-                <p>Fundamentals of Coding and Cloud</p>
-            </div>
-        </div>
-    </section>
+                        <div class="hero-role-wrapper">
+                            <span>And I am a</span>
+                            <span class="role-typing">Python Developer</span>
+                        </div>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <h2 class="section-title fade-in">My Skills</h2>
-        <div class="skills-container fade-in">
-            <div class="skill-category glass">
-                <h3><i class='bx bx-code-alt'></i> Programming</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">HTML</span>
-                    <span class="skill-tag">CSS</span>
-                </div>
-            </div>
-            
-            <div class="skill-category glass">
-                <h3><i class='bx bx-globe'></i> Web Technologies</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Flask</span>
-                    <span class="skill-tag">Django</span>
-                    <span class="skill-tag">REST APIs</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">SQL</span>
-                </div>
-            </div>
+                        <p class="hero-bio">
+                            Aspiring Tech Professional pursuing <strong>M.Sc. Computer Science</strong> with hands-on expertise in Python development, IoT architectures, and smart embedded systems. Experienced in robotics mentoring and hardware-to-cloud integration, passionate about building reliable software solutions.
+                        </p>
 
-            <div class="skill-category glass">
-                <h3><i class='bx bx-chip'></i> IoT & Embedded</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Arduino Uno</span>
-                    <span class="skill-tag">ESP8266</span>
-                    <span class="skill-tag">Sensors Integration</span>
-                    <span class="skill-tag">WiFi Comm</span>
-                    <span class="skill-tag">Bluetooth</span>
-                    <span class="skill-tag">Blynk Cloud</span>
-                </div>
-            </div>
+                        <div class="hero-cta-group">
+                            <a href="#projects" class="btn btn-primary">
+                                <i class='bx bx-folder-open'></i> View Projects
+                            </a>
+                            <a href="assets/documents/deepasri-selladurai-resume.pdf" download="Deepasri_Selladurai_Resume.pdf" class="btn btn-secondary">
+                                <i class='bx bxs-download'></i> Download Resume
+                            </a>
+                        </div>
 
-            <div class="skill-category glass">
-                <h3><i class='bx bx-mobile-alt'></i> Mobile Dev</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">MIT App Inventor</span>
-                    <span class="skill-tag">Android Studio</span>
-                </div>
-            </div>
+                        <div class="hero-socials" aria-label="Social Profiles">
+                            <a href="https://in.linkedin.com/in/deepasriselladurai" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn" aria-label="LinkedIn Profile">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                            <a href="https://github.com/DeepasriSelladurai" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub" aria-label="GitHub Profile">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="https://www.geeksforgeeks.org/user/deepasriselladurai25/" target="_blank" rel="noopener noreferrer" class="social-btn" title="GeeksforGeeks (Rank #1)" aria-label="GeeksforGeeks Profile">
+                                <img src="assets/icons/geeksforgeeks.png" alt="GeeksforGeeks">
+                            </a>
+                            <a href="https://leetcode.com/u/Deepasri_Selladurai/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LeetCode (300+ Day Streak)" aria-label="LeetCode Profile">
+                                <img src="assets/icons/leetcode.png" alt="LeetCode">
+                            </a>
+                            <a href="https://www.codechef.com/users/deepasri_25" target="_blank" rel="noopener noreferrer" class="social-btn" title="CodeChef" aria-label="CodeChef Profile">
+                                <img src="assets/icons/codechef.png" alt="CodeChef">
+                            </a>
+                            <a href="mailto:deepasriselladurai25@gmail.com" class="social-btn" title="Send Email" aria-label="Send Email">
+                                <i class='bx bxs-envelope'></i>
+                            </a>
+                        </div>
+                    </div>
 
-            <div class="skill-category glass">
-                <h3><i class='bx bx-wrench'></i> Tools</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Git & GitHub</span>
-                    <span class="skill-tag">VS Code</span>
-                    <span class="skill-tag">Postman</span>
-                    <span class="skill-tag">Google Colab</span>
-                </div>
-            </div>
-
-            <div class="skill-category glass">
-                <h3><i class='bx bx-bulb'></i> Soft Skills</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Problem Solving</span>
-                    <span class="skill-tag">Leadership</span>
-                    <span class="skill-tag">Communication</span>
-                    <span class="skill-tag">Adaptability</span>
-                    <span class="skill-tag">Teamwork</span>
-                    <span class="skill-tag">Time Management</span>
-                    <span class="skill-tag">Analytical Thinking</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="timeline-section" id="education">
-        <h2 class="section-title fade-in">Education</h2>
-        <div class="timeline fade-in">
-            <div class="timeline-item left">
-                <div class="timeline-content glass">
-                    <span class="date">2025 - Present</span>
-                    <h3>M.Sc Computer Science</h3>
-                    <h4>Currently Pursuing First Year</h4>
-                </div>
-            </div>
-            <div class="timeline-item right">
-                <div class="timeline-content glass">
-                    <span class="date">2022 - 2025</span>
-                    <h3>B.Sc Computer Science</h3>
-                    <h4>N.K.R Government Arts College for Women</h4>
-                    <p>Affiliated with Periyar University. <strong>80% (First Class with Distinction)</strong></p>
-                    <br>
-                    <p><strong>Academic Highlights:</strong></p>
-                    <ul>
-                        <li>Software Engineering: 81 Marks</li>
-                        <li>Software Testing: 84 Marks</li>
-                        <li>Student Gradefolio Mini Project: 96 Marks</li>
-                        <li>100/100 in Programming in Python</li>
-                        <li>100/100 in Mobile Application Development</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item left">
-                <div class="timeline-content glass">
-                    <span class="date">Passed out 2022</span>
-                    <h3>School Education</h3>
-                    <h4>Government Girls Higher Secondary School, Tiruchengode</h4>
-                    <ul>
-                        <li>HSC: 8.3 CGPA</li>
-                        <li>SSLC: 7.7 CGPA</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2 class="section-title fade-in">New Projects</h2>
-        <div class="projects-grid fade-in">
-            <!-- Project 1 -->
-            <div class="project-card glass">
-                <div class="project-img">
-                    <i class='bx bx-book-reader'></i>
-                </div>
-                <div class="project-info">
-                    <h3>Student Gradefolio</h3>
-                    <div class="project-tech">
-                        <span>Python</span><span>Flask</span><span>MongoDB</span><span>HuggingFace Transformers</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class='bx bxl-github'></i> Code</a>
-                        <a href="#"><i class='bx bx-link-external'></i> Live Demo</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="project-card glass">
-                <div class="project-img">
-                    <i class='bx bx-buildings'></i>
-                </div>
-                <div class="project-info">
-                    <h3>Automated Classroom Environment Monitoring System</h3>
-                    <div class="project-tech">
-                        <span>ESP8266</span><span>Blynk Cloud</span><span>IoT</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class='bx bxl-github'></i> Code</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="project-card glass">
-                <div class="project-img">
-                    <i class='bx bx-chalkboard'></i>
-                </div>
-                <div class="project-info">
-                    <h3>Smart Notice Board</h3>
-                    <div class="project-tech">
-                        <span>Arduino</span><span>IoT</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class='bx bxl-github'></i> Code</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 4 -->
-            <div class="project-card glass">
-                <div class="project-img">
-                    <i class='bx bx-home-heart'></i>
-                </div>
-                <div class="project-info">
-                    <h3>Family Well-being System</h3>
-                    <div class="project-tech">
-                        <span>Google Calendar API</span><span>Apps Script</span><span>Blynk</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class='bx bxl-github'></i> Code</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 5 -->
-            <div class="project-card glass">
-                <div class="project-img">
-                    <i class='bx bx-car'></i>
-                </div>
-                <div class="project-info">
-                    <h3>Driver Drowsiness Detection</h3>
-                    <div class="project-tech">
-                        <span>Python</span><span>OpenCV</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class='bx bxl-github'></i> Code</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 6 -->
-            <div class="project-card glass">
-                <div class="project-img">
-                    <i class='bx bx-money'></i>
-                </div>
-                <div class="project-info">
-                    <h3>Touchless ATM System</h3>
-                    <div class="project-tech">
-                        <span>Arduino Uno</span><span>Python</span><span>OpenCV</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class='bx bxl-github'></i> Code</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 7 -->
-            <div class="project-card glass">
-                <div class="project-img">
-                    <i class='bx bx-tachometer'></i>
-                </div>
-                <div class="project-info">
-                    <h3>Vehicle Speed Detector</h3>
-                    <div class="project-tech">
-                        <span>Arduino Uno</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class='bx bxl-github'></i> Code</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 8 -->
-            <div class="project-card glass">
-                <div class="project-img">
-                    <i class='bx bx-bot'></i>
-                </div>
-                <div class="project-info">
-                    <h3>Light Seeking Robot</h3>
-                    <div class="project-tech">
-                        <span>Arduino</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class='bx bxl-github'></i> Code</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 9 -->
-            <div class="project-card glass">
-                <div class="project-img">
-                    <i class='bx bx-microchip'></i>
-                </div>
-                <div class="project-info">
-                    <h3>Binary Decoder using SSD</h3>
-                    <div class="project-tech">
-                        <span>Transistors</span><span>Electronics</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class='bx bxl-github'></i> Code</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 10 -->
-            <div class="project-card glass">
-                <div class="project-img">
-                    <i class='bx bx-microphone'></i>
-                </div>
-                <div class="project-info">
-                    <h3>Voice Controlled Bot</h3>
-                    <div class="project-tech">
-                        <span>ESP Bluetooth</span><span>MIT App Inventor</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class='bx bxl-github'></i> Code</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 11 -->
-            <div class="project-card glass">
-                <div class="project-img">
-                    <i class='bx bx-search-alt'></i>
-                </div>
-                <div class="project-info">
-                    <h3>Mini Wikipedia App</h3>
-                    <div class="project-tech">
-                        <span>Wikipedia API</span><span>MIT App Inventor</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#"><i class='bx bxl-github'></i> Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Volunteering & Experience Section -->
-    <section class="timeline-section" id="volunteering">
-        <h2 class="section-title fade-in">Volunteering & Experience</h2>
-        <div class="timeline fade-in">
-            <div class="timeline-item left">
-                <div class="timeline-content glass">
-                    <span class="date">Part-Time</span>
-                    <h3>Otomatiks, Namakkal</h3>
-                    <h4>RRE</h4>
-                    <ul>
-                        <li>Robotics Trainer</li>
-                        <li>STEM Education</li>
-                        <li>Arduino Programming</li>
-                        <li>Project Mentoring</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item right">
-                <div class="timeline-content glass">
-                    <span class="date">Internship</span>
-                    <h3>Indian Info Tech</h3>
-                    <h4>IoT Fundamentals & Embedded Systems</h4>
-                    <ul>
-                        <li>IoT Fundamentals & Network Concepts</li>
-                        <li>OSI Model understanding</li>
-                        <li>Arduino ESP8266 & Microcontrollers</li>
-                        <li>Practical IoT Projects</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item left">
-                <div class="timeline-content glass">
-                    <span class="date">Project</span>
-                    <h3>EduNet Foundation</h3>
-                    <h4>Team Lead</h4>
-                    <p><strong>AI Driven Predictive Maintenance Project:</strong></p>
-                    <ul>
-                        <li>Solar Monitoring</li>
-                        <li>IoT Sensors</li>
-                        <li>Machine Learning</li>
-                        <li>Sustainability Solutions</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Coding Achievements Section -->
-    <section class="achievements" id="achievements">
-        <h2 class="section-title fade-in">Coding Achievements</h2>
-        <div class="stats-grid fade-in">
-            <!-- GFG -->
-            <div class="stat-card glass">
-                <div class="stat-icon">
-                    <img src="geeksforgeeks-icon-original.svg" alt="GFG" onerror="this.src='geeksforgeeks_logo_icon_248241.png'">
-                </div>
-                <h3>GeeksForGeeks</h3>
-                <p>Institute Rank <span class="highlight">#1</span></p>
-                <p><span class="highlight">1100+</span> Coding Score</p>
-                <p><span class="highlight">250+</span> DSA Problems</p>
-                <p><span class="highlight">200+</span> Active Days</p>
-            </div>
-            <!-- LeetCode -->
-            <div class="stat-card glass">
-                <div class="stat-icon">
-                    <img src="leetcode_logo_icon_145113.png" alt="LeetCode">
-                </div>
-                <h3>LeetCode</h3>
-                <p><span class="highlight">300+</span> Day Streak</p>
-                <p><span class="highlight">150+</span> Problems Solved</p>
-                <p>Multiple Annual Badges</p>
-            </div>
-            <!-- CodeChef -->
-            <div class="stat-card glass">
-                <div class="stat-icon">
-                    <img src="codechef_logo_icon_247320.png" alt="CodeChef">
-                </div>
-                <h3>CodeChef</h3>
-                <p><span class="highlight">250+</span> Problems Solved</p>
-                <p><span class="highlight">150+</span> Day Streak</p>
-            </div>
-            <!-- Coding Ninjas -->
-            <div class="stat-card glass">
-                <div class="stat-icon">
-                    <img src="codingninjas_logo_icon_247302.png" alt="Coding Ninjas">
-                </div>
-                <h3>Coding Ninjas</h3>
-                <p>Top <span class="highlight">1.45%</span> Ranking</p>
-                <p><span class="highlight">150+</span> Day Streak</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2 class="section-title fade-in">Get In Touch</h2>
-        <div class="contact-container fade-in">
-            <div class="contact-info">
-                <div class="contact-item glass">
-                    <div class="contact-icon">
-                        <i class='bx bx-envelope'></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Email</h4>
-                        <p id="email-text">deepasriselladurai25@gmail.com</p>
-                    </div>
-                    <button class="copy-btn" onclick="copyToClipboard('email-text')" title="Copy Email"><i class='bx bx-copy'></i></button>
-                </div>
-                
-                <div class="contact-item glass">
-                    <div class="contact-icon">
-                        <i class='bx bx-phone'></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Phone</h4>
-                        <p id="phone-text">+91 6385312776</p>
-                    </div>
-                    <button class="copy-btn" onclick="copyToClipboard('phone-text')" title="Copy Phone"><i class='bx bx-copy'></i></button>
-                </div>
-
-                <div class="contact-item glass">
-                    <div class="contact-icon">
-                        <i class='bx bx-map'></i>
-                    </div>
-                    <div class="contact-details">
-                        <h4>Location</h4>
-                        <p>Namakkal, Tamil Nadu, India</p>
+                    <div class="hero-visual">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-glow-ring"></div>
+                            <div class="avatar-frame">
+                                <img src="assets/images/profile-photo.jpg" alt="Deepasri Selladurai Portrait">
+                            </div>
+                            <div class="avatar-tag tag-top">
+                                <i class='bx bxl-python'></i> Python Backend
+                            </div>
+                            <div class="avatar-tag tag-bottom">
+                                <i class='bx bx-chip'></i> ESP32 & IoT
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="social-links" style="margin-top: 2rem;">
-                    <a href="https://in.linkedin.com/in/deepasriselladurai" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/DeepasriSelladurai" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.geeksforgeeks.org/user/deepasriselladurai25/" target="_blank" title="GeeksForGeeks"><img src="geeksforgeeks_logo_icon_248241.png" style="width:20px; filter: brightness(0) invert(1);" alt="GFG"></a>
-                    <a href="https://leetcode.com/u/Deepasri_Selladurai/" target="_blank" title="LeetCode"><img src="leetcode_logo_icon_145113.png" style="width:20px; filter: brightness(0) invert(1);" alt="LC"></a>
-                    <a href="https://www.codechef.com/users/deepasri_25" target="_blank" title="CodeChef"><img src="codechef_logo_icon_247320.png" style="width:20px; filter: brightness(0) invert(1);" alt="CC"></a>
-                    <a href="https://www.hackerrank.com/profile/Deepasri_25" target="_blank" title="HackerRank"><img src="hackerrank_logo_icon_145206.png" style="width:20px; filter: brightness(0) invert(1);" alt="HR"></a>
+                <!-- Technical Pipeline Visualizer (Python -> IoT -> ESP32 -> Sensors -> Cloud -> Application) -->
+                <div class="pipeline-container glass-panel" id="tech-pipeline" tabindex="0" aria-label="Technical Architecture Pipeline">
+                    <div class="pipeline-header">
+                        <span class="section-tag"><i class='bx bx-git-branch'></i> Architecture Flow</span>
+                        <h3 class="pipeline-title">Hardware-to-Cloud Engineering Pipeline</h3>
+                    </div>
+                    <div class="pipeline-flow" id="pipeline-flow-container">
+                        <!-- Populated dynamically from js/data.js -->
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="contact-form glass">
-                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message feature coming soon! Please use email for now.');">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name" required>
+        <!-- ==========================================================================
+             ABOUT SECTION
+             ========================================================================== -->
+        <section class="about-section" id="about" aria-label="About Deepasri">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bx-user'></i> Background</span>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Dedicated computer science student, problem solver, and robotics educator.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-media-wrapper glass-panel">
+                        <video class="about-media-video" autoplay loop muted playsinline poster="assets/images/passionate-photo.jpg">
+                            <source src="assets/media/professional-clip.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="about-highlights-grid" id="about-highlights-container">
+                            <!-- Dynamically loaded -->
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Your Email" required>
+
+                    <div class="about-text-content glass-panel" style="padding: 2.5rem;">
+                        <h3 style="font-size:1.6rem; font-weight:700; margin-bottom:1.25rem;" class="gradient-text">
+                            Bridging Physical Hardware with Intelligent Software
+                        </h3>
+                        <p>
+                            I am a continuous learner pursuing my <strong>M.Sc. in Computer Science</strong> with a strong foundation in Python development, IoT embedded systems, full-stack web applications, and artificial intelligence.
+                        </p>
+                        <p>
+                            My practical experience spans from firmware programming on <strong>ESP32, ESP8266, and Arduino</strong> microcontrollers with multi-sensor arrays, to developing clean RESTful APIs and machine learning perception systems with OpenCV.
+                        </p>
+                        <p>
+                            In addition to technical development, I serve as a <strong>Robotics and STEM Educator at Otomatiks</strong>, mentoring young students in computational thinking, sensor electronics, and tournament robotics.
+                        </p>
+                        <p>
+                            With over <strong>500+ algorithmic problems solved</strong> across platforms (achieving Institute Rank #1 on GeeksforGeeks and 300+ day streaks on LeetCode), I take pride in writing efficient, scalable, and well-structured code.
+                        </p>
+
+                        <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class='bx bx-message-rounded-dots'></i> Let's Collaborate
+                            </a>
+                            <a href="assets/documents/deepasri-selladurai-resume.pdf" download class="btn btn-secondary">
+                                <i class='bx bx-file'></i> Download CV
+                            </a>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message <i class='bx bx-send'></i></button>
-                </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- ==========================================================================
+             SKILLS SECTION (Dominant Python & IoT)
+             ========================================================================== -->
+        <section class="skills-section" id="skills" aria-label="Technical Skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bx-code-alt'></i> Technical Stack</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-subtitle">Specialized technical stack with visual dominance in Python Backend, Embedded IoT, and Artificial Intelligence.</p>
+                </div>
+
+                <div class="skills-grid" id="skills-grid-container">
+                    <!-- Populated dynamically from js/data.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             ACHIEVEMENTS & BADGES SECTION
+             ========================================================================== -->
+        <section class="achievements-section" id="achievements" aria-label="Coding Platform Achievements">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bx-trophy'></i> Problem Solving</span>
+                    <h2 class="section-title">Coding Achievements & Streaks</h2>
+                    <p class="section-subtitle">Verified achievements across global competitive programming platforms with 500+ total DSA problems solved.</p>
+                </div>
+
+                <div class="achievements-grid" id="achievements-grid-container">
+                    <!-- Populated dynamically from js/data.js -->
+                </div>
+
+                <!-- Badges Gallery -->
+                <div class="badges-container glass-panel">
+                    <div class="badges-header">
+                        <span class="section-tag"><i class='bx bx-award'></i> Streak Milestones</span>
+                        <h3 class="badges-title">Official Platform Streak Badges</h3>
+                    </div>
+                    <div class="badges-gallery" id="badges-gallery-container">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             EXPERIENCE SECTION (Latest First)
+             ========================================================================== -->
+        <section class="experience-section" id="experience" aria-label="Professional Experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bx-briefcase'></i> Career Path</span>
+                    <h2 class="section-title">Experience & Internships</h2>
+                    <p class="section-subtitle">Hands-on industry internships, data workflows, and STEM robotics leadership.</p>
+                </div>
+
+                <div class="experience-timeline" id="experience-timeline-container">
+                    <!-- Populated dynamically from js/data.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             PROJECTS SECTION (Filter Tabs + Cards)
+             ========================================================================== -->
+        <section class="projects-section" id="projects" aria-label="Projects Showcase">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bx-grid-alt'></i> Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Explore smart systems engineered across Python, IoT, Computer Vision, and Web technologies.</p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="filter-bar" id="project-filter-bar" role="tablist" aria-label="Project Category Filter">
+                    <!-- Filter buttons injected dynamically -->
+                </div>
+
+                <div class="projects-grid" id="projects-grid-container">
+                    <!-- Project Cards rendered dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             CERTIFICATIONS SECTION (Lightbox Gallery)
+             ========================================================================== -->
+        <section class="certifications-section" id="certifications" aria-label="Certifications Gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bx-certification'></i> Verified Credentials</span>
+                    <h2 class="section-title">Certifications & Honors</h2>
+                    <p class="section-subtitle">Accredited certifications across Python, Cloud, Web Development, and Software Engineering.</p>
+                </div>
+
+                <div class="cert-gallery-grid" id="certifications-gallery-container">
+                    <!-- Populated dynamically from js/data.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             EDUCATION SECTION
+             ========================================================================== -->
+        <section class="education-section" id="education" aria-label="Academic Education">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bxs-graduation'></i> Education</span>
+                    <h2 class="section-title">Academic Background</h2>
+                    <p class="section-subtitle">Academic degrees and distinction achievements in Computer Science.</p>
+                </div>
+
+                <div class="edu-timeline" id="education-timeline-container">
+                    <!-- Populated dynamically from js/data.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+             CONTACT SECTION
+             ========================================================================== -->
+        <section class="contact-section" id="contact" aria-label="Contact Information">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class='bx bx-envelope'></i> Connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Open for full-time software engineering roles, Python developer positions, and IoT project collaborations.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-list">
+                        <!-- Email Card -->
+                        <div class="contact-card glass-panel">
+                            <div class="contact-icon-box">
+                                <i class='bx bx-envelope'></i>
+                            </div>
+                            <div class="contact-meta">
+                                <h4>Email Address</h4>
+                                <p id="contact-email">deepasriselladurai25@gmail.com</p>
+                            </div>
+                            <button class="copy-action-btn" id="copy-email-btn" title="Copy Email Address" aria-label="Copy Email">
+                                <i class='bx bx-copy'></i>
+                            </button>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="contact-card glass-panel">
+                            <div class="contact-icon-box">
+                                <i class='bx bx-phone'></i>
+                            </div>
+                            <div class="contact-meta">
+                                <h4>Phone Number</h4>
+                                <p id="contact-phone">+91 6385312776</p>
+                            </div>
+                            <button class="copy-action-btn" id="copy-phone-btn" title="Copy Phone Number" aria-label="Copy Phone Number">
+                                <i class='bx bx-copy'></i>
+                            </button>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="contact-card glass-panel">
+                            <div class="contact-icon-box">
+                                <i class='bx bx-map-pin'></i>
+                            </div>
+                            <div class="contact-meta">
+                                <h4>Location</h4>
+                                <p>Namakkal, Tamil Nadu, India</p>
+                            </div>
+                        </div>
+
+                        <!-- Quick Profile Links -->
+                        <div class="hero-socials" style="margin-top: 1rem;">
+                            <a href="https://in.linkedin.com/in/deepasriselladurai" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn" aria-label="LinkedIn">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                            <a href="https://github.com/DeepasriSelladurai" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub" aria-label="GitHub">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="https://www.geeksforgeeks.org/user/deepasriselladurai25/" target="_blank" rel="noopener noreferrer" class="social-btn" title="GeeksforGeeks" aria-label="GeeksforGeeks">
+                                <img src="assets/icons/geeksforgeeks.png" alt="GFG">
+                            </a>
+                            <a href="https://leetcode.com/u/Deepasri_Selladurai/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LeetCode" aria-label="LeetCode">
+                                <img src="assets/icons/leetcode.png" alt="LeetCode">
+                            </a>
+                            <a href="https://www.codechef.com/users/deepasri_25" target="_blank" rel="noopener noreferrer" class="social-btn" title="CodeChef" aria-label="CodeChef">
+                                <img src="assets/icons/codechef.png" alt="CodeChef">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel glass-panel">
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Full Name</label>
+                                <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Johnson" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@company.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <input type="text" id="form-subject" class="form-input" placeholder="e.g. Software Engineer Opportunity / Project Inquiry" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Your Message</label>
+                                <textarea id="form-message" class="form-textarea" placeholder="Hi Deepasri, I came across your portfolio..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class='bx bx-send'></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Deepasri Selladurai. All Rights Reserved.</p>
+    <footer class="footer" role="contentinfo">
+        <div class="footer-inner">
+            <p class="footer-copy">
+                &copy; 2026 Deepasri Selladurai. Built for performance, accessibility, and clean design.
+            </p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="assets/documents/deepasri-selladurai-resume.pdf" download>Resume</a>
+                <button onclick="window.portfolioTour.replay()" style="color:var(--secondary); display:flex; align-items:center; gap:0.25rem;">
+                    <i class='bx bx-revision'></i> Replay Tour
+                </button>
+                <button id="back-to-top" class="back-to-top-btn" title="Back to top" aria-label="Back to top">
+                    <i class='bx bx-up-arrow-alt'></i>
+                </button>
+            </div>
+        </div>
     </footer>
+
+    <!-- Floating Tour Button -->
+    <button class="tour-floating-trigger" onclick="window.portfolioTour.start()" title="Take guided walkthrough tour" aria-label="Take Guided Tour">
+        <i class='bx bx-compass'></i>
+        <span>Take a Tour</span>
+    </button>
+
+    <!-- Accessible Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightbox-title">
+        <div class="lightbox-content-box">
+            <div class="lightbox-header">
+                <h4 class="lightbox-title" id="lightbox-title">Certificate Preview</h4>
+                <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close certificate modal">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+            <div class="lightbox-body">
+                <img src="" alt="Certificate" id="lightbox-img" class="lightbox-image">
+            </div>
+            <div class="lightbox-footer">
+                <span>Verified Credential</span>
+                <a href="#" id="lightbox-download-link" class="btn btn-secondary" style="font-size:0.8rem; padding:0.4rem 0.8rem;" download>
+                    <i class='bx bx-download'></i> Download Original
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="main.js"></script>
-    <script src="roles.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/tour.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
